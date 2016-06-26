@@ -139,7 +139,7 @@
 				array("name" 			=> __('Image', 'fusion-core'),
 					  "desc" 			=> __('Upload an image to display in the frame.', 'fusion-core'),
 					  "id" 				=> "fusion_image",
-					  "type" 			=> ElementTypeEnum::UPLOAD,
+					  "type" 			=> ElementTypeEnum::INPUT,
 					  "upid" 			=> "1",
 					  "value" 			=> ""
 					  ),				  
