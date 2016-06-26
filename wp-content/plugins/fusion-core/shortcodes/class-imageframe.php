@@ -148,6 +148,7 @@ class FusionSC_Imageframe {
 
 		// CHANGED HERE
 		$output = str_replace( 'src=', 'data-src=', $output );
+		$output = str_replace( '/upload/', '/upload/c_scale,w_auto,q_auto,f_auto/', $output );
 		// echo('<!--' . 'HELP HERE' . $output . '-->');
 
 		$html = sprintf( '<span %s>%s</span>', FusionCore_Plugin::attributes( 'imageframe-shortcode' ), $output );
