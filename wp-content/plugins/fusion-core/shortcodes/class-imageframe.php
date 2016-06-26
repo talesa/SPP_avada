@@ -88,6 +88,9 @@ class FusionSC_Imageframe {
 		}
 
 		$img_classes = 'img-responsive';
+
+		// CHANGED HERE
+		$img_classes .= ' cld-responsive';
 		
 		// Get custom classes from the img tag
 		preg_match( '/(class=["\'](.*?)["\'])/', $content, $classes );
@@ -142,6 +145,10 @@ class FusionSC_Imageframe {
 		} elseif( $link ) {
 			$output = sprintf( '<a %s>%s</a>', FusionCore_Plugin::attributes( 'imageframe-shortcode-link' ), do_shortcode( $content ) );
 		}
+
+		// CHANGED HERE
+		$output = str_replace( 'src=', 'data-src=', $output );
+		// echo('<!--' . 'HELP HERE' . $output . '-->');
 
 		$html = sprintf( '<span %s>%s</span>', FusionCore_Plugin::attributes( 'imageframe-shortcode' ), $output );
 
