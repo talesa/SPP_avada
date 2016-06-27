@@ -136,7 +136,7 @@
 					  "value" 			=> ""
 					  ),						  
 					  
-				array("name" 			=> __('Image', 'fusion-core'),
+				array("name" 			=> __('Image URL', 'fusion-core'),
 					  "desc" 			=> __('Upload an image to display in the frame.', 'fusion-core'),
 					  "id" 				=> "fusion_image",
 					  "type" 			=> ElementTypeEnum::INPUT,
